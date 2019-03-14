@@ -1,0 +1,108 @@
+<!--Indica o tipo de documento que será interpretado-->
+<!doctype html>
+
+<!--Inicia o docuemnto e identifica o idioma do conteúdo-->
+<html lang="pt-br">
+
+<!--Define as informações do documento: título,tabela de caracteres, scripts e meta tags-->
+<head>
+
+<!--Define o título do documento na aba do navegador-->
+<title>Cosmeticos Oline</title>
+
+<!--Define a tabela de caracteres usada pelo documento-->
+<meta charset="utf-8"/>
+
+<!--link para css-->
+<link rel="stylesheet" href="css/estilos.css" media="all"/>
+</head>
+<nav>
+<ul id="menu">
+	<li><a href="ProdutosP.html">Produtos</a></li>
+	<li><a href="MasVendidos.html">Mas Vendidos</a></li>
+	<li><a href="Marcas.html">Marcas</a></li>
+	<li><a href="EntreEmContato.html">Entre em contato</a></li>
+	<li><a href="Quemsomos.html">Quem somos</a></li>
+</ul>
+</nav>
+
+<!--Área de conteúdo do documento-->
+<body>
+ <div class="cenfor">
+	    <h1>entre em contato</h1>
+		<hr/>
+	    <form name="entreemcontato"method="get/post" action="mailto:nomeusuario@serve.com.br">
+		    <label for="nomeusuario">
+                nome:
+            </label>
+            <input type="text" name="nomeusuario" id="nomeusuario"placeholder="digite seu nome"/>	
+
+            <p>&nbsp;</p> 
+			
+			<label for="telusuario">
+                telefone:
+            <input type="number" name="telusuario"id="telusuario"placeholder="digite seu telefone"/>
+			<br/>somente numero
+			
+			<p>&nbsp;</p>  
+			
+			<label for="cidadeusuario">
+                cidade:
+            <input type="text"="cidadeusuario"id="cidadeusuario"placeholder="digite nome da sua cidade"/>
+			
+			<p>&nbsp;</p> 
+			
+			<label>
+			    sexo:
+			</label>
+			<input type="radio" name="sexo"value="masculino">masculino
+			<input type="radio" name="sexo"value="feminino">feminino
+			
+			<p>&nbsp;</p>
+
+			<label>
+			    Interesses:
+			</label>
+			<br/>
+			<input type="checkbox" name="interesses"value="Maquiagem">Maquiagem</br>
+			<input type="checkbox" name="interesses"value="Perfumes">Perfumes</br>
+			<input type="checkbox" name="interesses"value="Produtos para pele">Produtos para pele</br>
+			<input type="checkbox" name="interesses"value="Produto para cabelos">Produto para cabelos</br>
+			<input type="checkbox" name="interesses"value="Banho e Higiene">Banho e Higiene</br>
+			<input type="checkbox" name="interesses"value="Outros">Outros</br>
+			
+			<p>&nbsp;</p>
+			
+			<label for="emaildousuario">
+                E-mail:
+            <input type="text"="emaildousuario"id="emaildousuario"placeholder="digite se email"size="55"/>
+			
+			<p>&nbsp;</p>
+			
+			<label>
+			<select name="assunto">
+			    <option value="elogios">
+				elogios</option>
+				<option value="dúvidas">
+				dúvidas</option>
+				<option value="sugestoes">
+				sugestoes</option>
+				<option value="outros">
+				outros</option>
+			</select>
+			   <p>&nbsp;</p> 
+			<label for="mensagem">
+			        mensagem:
+		    </label>
+			<br/>
+			<textarea name="mensagem" id="mensagem" cols="60" rows="8" style="resize:nome;"></textarea>
+			
+			<p>&nbsp;</p>
+			
+			<input type="submit" value="enviar">
+			<input type="reset"value="limpar">
+		  
+		</form>
+		</div>
+	</body>
+	</html>

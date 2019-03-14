@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+	    <title>formulario de contato</title>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+	    <h1>entre em contato</h1>
+		<hr/>
+	    <form name="entreemcontato"method="get/post" action="mailto:nomeusuario@serve.com.br">
+		    <label for="nomeusuario">
+                nome:
+            </label>
+            <input type="text" name="nomeusuario" id="nomeusuario"placeholder="digite seu nome"/>	
+
+            <p>&nbsp;</p> 
+			
+			<label for="telusuario">
+                telefone:
+            <input type="number" name="telusuario"id="telusuario"placeholder="digite seu telefone"/>
+			<br/>somente numero
+			
+			<p>&nbsp;</p>  
+			
+			<label for="cidadeusuario">
+                cidade:
+            <input type="text"="cidadeusuario"id="cidadeusuario"placeholder="digite nome da sua cidade"/>
+			
+			<p>&nbsp;</p> 
+			
+			<label>
+			    sexo:
+			</label>
+			<input type="radio" name="sexo"value="masculino">masculino
+			<input type="radio" name="sexo"value="feminino">feminino
+			
+			<p>&nbsp;</p>
+
+			<label>
+			    Interesses:
+			</label>
+			<br/>
+			<input type="checkbox" name="interesses"value="gastonomia">gastonomia</br>
+			<input type="checkbox" name="interesses"value="notícias">notícias</br>
+			<input type="checkbox" name="interesses"value="entreterimento">entreterimento</br>
+			<input type="checkbox" name="interesses"value="esporte">esporte</br>
+			<input type="checkbox" name="interesses"value="politica">politica</br>
+			<input type="checkbox" name="interesses"value="economia">economia</br>
+			
+			<p>&nbsp;</p>
+			
+			<label for="emaildousuario">
+                E-mail:
+            <input type="text"="emaildousuario"id="emaildousuario"placeholder="digite se email"size="55"/>
+			
+			<p>&nbsp;</p>
+			
+			<label>
+			<select name="assunto">
+			    <option value="elogios">
+				elogios</option>
+				<option value="dúvidas">
+				dúvidas</option>
+				<option value="sugestoes">
+				sugestoes</option>
+				<option value="outros">
+				outros</option>
+			</select>
+			   <p>&nbsp;</p> 
+			<label for="mensagem">
+			        mensagem:
+		    </label>
+			<br/>
+			<textarea name="mensagem" id="mensagem" cols="60" rows="8" style="resize:nome;"></textarea>
+			
+			<p>&nbsp;</p>
+			
+			<input type="submit" value="eviar"><input type="reset"value="limpa">
+		
+		</form>
+	</body>
+	</html>

@@ -1,0 +1,167 @@
+/*definição das regras de formatação do projeto*/
+*{
+	margin: 0px; /*define a distância da margem do objeto*/
+	padding: 0px; /*define o espaçamento interno do objeto*/
+}
+
+body{
+	background-color:#000; /*altera a cor do fundo*/
+	color:#FFD700; /*define a cor do texto padrão*/
+}
+{
+	background-imagem: url(../img/perfume Background);
+    background-repeat: no-repeat;
+	
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	}
+	
+	
+
+
+header{
+	width:1024px; /*determina a largura do objeto*/
+	height: 150px; /*determina a altura do objeto*/
+	background-color: #000; /*determina a cor do plano de fundo*/
+	margin: 0 auto; /*essa definição centraliza o objeto na tela*/
+	
+}
+
+nav{
+	width: 1024px;
+	height: 40px;
+	background-color: #000;
+	color: #fff;
+	text-align: center; /*centraliza o conteúdo do objeto*/
+	margin: 0 auto;
+}
+
+section{
+	width:1024px;
+	height:300px;
+	margin: 0 auto;
+}
+
+footer{
+	width: 1024px;
+	height: 250px;
+	margin: 0 auto;
+	background-color: #363636;
+	color: #CFCFCF;
+}
+
+h1{
+	color: #8B2252;
+}
+
+h2{
+	color:#CD853F;
+}
+
+span{
+	color: #B22222;
+	background-color:#FFA500;
+}
+
+/* declaração de identificadores */
+#banner{
+	height: 300px;
+	width: 1024px;
+}
+
+#inf{
+	height: 200px;
+	background-color: #000;
+	font-style: oblique; /*formata o texto com estilo itálico*/
+	color: #FFD700;
+	clear: both; /*elimina a herança de float usada anteriormente no documento*/
+}
+
+#contpadraoa{
+	white
+	
+	
+	
+}
+#menu, #menu * {
+	margin: 0;
+	padding: 0;}
+	
+#menu { 
+	width: 100%;
+	list-style: none;
+	float:left;
+	font: bold 0.8em Arial, Verdana, Helvetica, sans-serif;
+	background: 334a5a;
+	line-height: 40px;}
+	
+#menu li {float: left;}
+
+#menu li a {
+	display:block;
+	text-decoration: none;
+	margin-right: 2px;
+	color: #132b33;
+	padding: 0.25em 0.5em 0.25em 0.75em;
+	border-left: 1em solid #fab016;
+	background: #fab016;	}
+	
+#menu li a:visited {color: #ccc;}
+
+#menu li a:hover {
+	color: #2eacd5;
+	background: #CD2990;
+	border-left: 1em solid #a2c7da;}
+
+
+/* declaração de classes */
+.coluna{
+	width: 330px;
+	height: 480px;
+	background-color: #000;
+	float: left; /*posiciona o objeto a partir de sua borda*/
+	padding-left: 6px; /*define o espaçamento entre a borda  esquerda do objeto e o conteúdo*/
+}
+
+.espaco{
+	margin-left: 8px; /*define a medida da margem em posição específica do objeto */
+	margin-right: 8px; /*define a medida da margem em posição específica do objeto */
+}
+.imgartigo{
+	width: 312px;
+	height: 220px; 
+	padding-left: 7px;
+	padding-right: 7px;
+}
+}.sizeSect{
+	height: 400px;
+	width: 1024px;
+	
+	
+}
+.foto{
+	height: 190px;
+	width: 318px;
+	
+}
+.legend{
+	text-align: center;
+}
+.texto{
+	background-color: white;
+	margin-bottom: 12px;
+	
+}
+.tit{
+	text-align: center;
+	font-size: 45px;
+	color: red;
+}
+.tit2{
+	text-align: center;
+	font-size: 75px;
+	color: blue;
+}
+
+
+
