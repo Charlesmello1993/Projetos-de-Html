@@ -1,0 +1,597 @@
+<!doctype html>
+<html>
+<head>
+    <title>Cosmeticos Oline</title>
+    <meta charset="utf-8"/>
+    
+    <!-- define a viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- inserindo css do Bootstrap -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="all" />
+	
+	<!-- inserindo css do Font Awesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all" />
+	
+	<!-- CSS personalizado-->
+	
+	<link rel="stylesheet" href="css/meusEstilos.css"
+	media="all"/>
+	<style>
+	.backNav{
+	  background-color: dark;
+	}
+	.navbar-brand{
+	    color: orange !importante;
+	}
+	#popup {
+	    background: #000000;
+		height:100%;
+		width:100%;
+		position:fixed;
+		top: 0;
+		left: 0;
+		display: none;
+		}
+	#center{
+	border: 10px solid #121212;
+	margin: 6% auto;
+	width: 750 px;
+	}
+	#close(
+	float: right;
+	position: absolute;
+	)
+	
+	</style>
+	<!-- JQuery da galeria -->
+	
+	<script type="text/javascript" src="js/jquery.js" ></script>
+	<script type="text/javascript" >
+
+		$(document).ready(function(){
+		$(".thumbnail").click(function(){
+			var address= $(this).attr("src");
+			$("#popup").fadeIn("slow");
+			$("#lightbox").attr("src",address);
+		});
+		$("#close").click(function(){
+			$("#popup").fadeOut("fast");
+		});
+		});
+	</script>
+</head>
+    
+<body>
+<!-- Início da barra de navegação -->
+
+<nav class="navbar navbar-inverse backNav navbar-fixed-top">
+   <div class="container-fluid">
+  <!-- cabeçalho do menu -->	
+    <div class="navbar-header">
+	<button type="button" class="navbar-toggle
+	collapsed" data-toggle="collapse"
+	data-target="#bs-example-navbar-collapse-1" 
+	aria-expanded="false">
+	
+	<span class="sr-only">Cosmeticos Oline</span>
+	
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	
+	 </button> 
+     <a class="navbar-brand link" href="#" >Cosmeticos Oline</a>	 
+  
+  
+   </div>
+   
+   <!-- itens do menu -->
+   
+   <div class="coolapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   <ul class="nav navbar-nav">
+   <li><a href="#quemsomos">A empresa</a></li>
+   <li class="dropdown">
+      <a href="#" class="dropdown-togle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Produtos<span class="caret"><span></a>
+	  
+	  <ul class="dropdown-menu">
+	     <li><a href="#perfumes">Perfumes</a></li>
+		  <li><a href="#maquiagem">maquiagem</a></li>
+		   <li><a href="#belezamasculino">beleza masculino</a></li>
+		    <li><a href="#belezafeminina">beleza feminina</a></li>
+	  
+	  </ul>
+	  
+   </li>
+   
+   <li><a href="#Mas Vendidos">Mas Vendidos</a></li>
+   <li><a href="#galeria">Galeria</a></li>
+	<li><a href="#faleconosco">Fale conosco</a></li>  
+
+   </ul>	
+
+    </div>
+   </div>
+</nav>
+
+<!-- Fim da barra de navegação -->	
+
+<!--Início do slider-->	
+
+
+
+
+
+<div class="divslider" style="background-color:black;">
+	<div class="container-slider">
+		<div class="col-xs-12"> <!-- indica a utilização de toda a largura da tela -->
+			<div id="sliderprincipal" class="carousel slide" data-ride="carousel" data-interval="5000" style="width:100%;">
+<!--Criação dos botões de seleção de imagem-->	
+     <ol class="carousel-indicators">
+					<li class="active" data-target="#sliderprincipal" data-slide-to="0"></li>
+					<li data-target="#sliderprincipal" data-slide-to="1"></li>
+					<li data-target="#sliderprincipal" data-slide-to="2"></li>
+					<li data-target="#sliderprincipal" data-slide-to="3"></li>
+				</ol>
+	  
+	  <!--Indicando as imagens  do slide-->	
+	  
+	  
+	  <div class="carousel-inner" role="listbox">
+		<div class="item active">
+			<img src="imagens/foto01.jpg" alt="" style="width:100%;"/>
+			</div>
+			
+			<div class="item">
+			<img src="imagens/foto02.jpg" alt="" style="width:100%;"/>
+			</div>
+			
+			<div class="item">
+			<img src="imagens/foto03.jpg" alt="" style="width:100%;"/>
+			</div>
+			
+			<div class="item">
+			<img src="imagens/foto04.jpg" alt="" style="width:100%;"/>
+			</div>
+         </div>
+		 <!--Controles laterais-->	
+		 <a class="left carousel-control" href="#sliderprincipal" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Anterior</span>
+	     </a>
+		 <a class="right carousel-control" href="#sliderprincipal" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Anterior"</span>
+			</a>
+		    
+			
+</div>
+</div>
+</div>
+</div>
+<!--Fim do slider-->	
+
+<!--área de icones de serviço -->	
+
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-4 col-lg4">
+<div class="thumbnail">
+<div  class="alinhaIcones">
+<i class="fa fa-plane fa-5x" aria-hidden=
+"true"></i>
+ </div>
+<div class="caption">
+<h3>revendedora</h3>
+<p>É muito fácil. Primeiro, faça um cadastro online e preencha informações básicas, como: nome, RG, CPF, data de nascimento, e-mail, telefone e outros. Um dos requisitos para a inscrição é ter mais de 18 anos, mas também é necessário ter um comprovante de endereço no seu nome.</p>
+ 
+ <p><a href="https://www.boticario.com.br/" target="_blank" class="btn btn-primary"
+ role="button">Pesquisar</a></p>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="col-xs-12 col-sm-12 col-md-4 col-lg4">
+<div class="thumbnail">
+<div  class="alinhaIcones">
+<i class="fa fa-bed fa-5x" aria-hidden=
+"true"></i>
+ </div>
+<div class="caption">
+<h3>lojas</h3>
+<p>os melhores lojas, com os melhores preços
+ para que sua compras seja ainda mais especial
+ e aconchegate</p>
+ 
+ <p><a href="https://www.boticario.com.br/" target="_blank" class="btn btn-primary"
+ role="button">Pesquisar</a></p>
+
+</div>
+</div>
+</div>
+
+
+
+</div>
+
+
+<!--Fim da área de serviços -->
+
+<!--área da compra de passagens -->
+
+
+
+<div class="row linhaCompra" style="background-color:#2e64fe;"> 
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<button class="btn btn-info col-xs-12 col-sm-12 col-md-2 col-lg-2 botaoCompra">
+		<div style="float:left;">
+			<i class="fa fa-plane fa-2x" aria-hidden="true"></i>
+		</div>
+		<div class="botaoCompraLegenda">
+			Comprar<br/>
+			produtos<br/>
+		</button>
+		<input class="col-xs-12 col-sm-12 col-md-3 col-lg-3 camposCompra" type="text" name="origem" placeholder="Digite o tipo de produto"/>
+		<input class="col-xs-12 col-sm-12 col-md-3 col-lg-3 camposCompra" type="text" name="origem" placeholder="Digite o nome do produto"/>
+		
+		<button class="btn btn-info col-xs-12 col-sm-12 col-md-2 col-lg-2 botaoCompra">
+		<div style="float:left;">
+			<i class="fa fa-clock-o fa-2x" aria-hidden="true"></i>
+		</div>
+		<div class="botaoCompraLegenda">
+			fazer<br/>
+			pedidos<br/>
+			
+		</button>
+		
+		<button class="btn btn-info col-xs-12 col-sm-12 col-md-2 col-lg-2 botaoCompra">
+		<div style="float:left;">
+			<i class="fa fa-check fa-2x" aria-hidden="true"></i>
+		</div>
+		<div class="botaoCompraLegenda">
+			Status<br/>
+			pedidos<br/>
+		</button>
+  </div>
+   </div>
+
+
+
+<!--Fim da área de compra de passagens -->
+
+
+<!--Ínicio da área de conteúdo do site (https://fontawesome.com/icons?d=gallery) -->
+
+
+<section id="quemsomos">
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+		 <div class="page-header">
+			<h2>Quem somos</h2>
+	     </div>
+		
+		 
+		 <figure class="col-12 col-sm-5 col-md-5 col-lg-5">
+		    <img class="img-responsive"src="imagens/desireeparfum.jpg" alt="Travel Turismo"/>
+		 </figure>
+		 
+		 <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+		           Quem somos
+		    <p>A <strong>Cosmeticos Oline</strong> Uma empresa de perfumes e cosméticos investe em franquias de baixo custo para expandir o negócio. Hoje, o Brasil é o maior mercado consumidor de perfumes no mundo.</p>
+
+<p>E a rede aposta nesta paixão dos brasileiros. São 60 fragrâncias disponíveis em quiosques espalhados pelas cidades.</p>
+
+<p>Um produto que agrada tanto homens quanto mulheres. O perfume é um negócio lucrativo pelo alto valor agregado.</p>
+
+<p>Os irmãos Diego e Thiago Braga são franqueados de uma rede de perfumaria. O quiosque foi o modelo de franquia escolhido pelos empresários, que investiram R$ 50 mil na estrutura e aquisição dos perfumes e cosméticos. O ponto fica no corredor de um shopping, em São Paulo.</p>
+
+		 </div>	
+		 
+</div>
+</div>
+</div>
+</section>
+
+<section id="perfumes">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="page-header">
+<h2>Perfumes</h2>
+</div>
+<figure class="col-12 col-sm-5 col-md-5 col-lg-5">
+<img class="img-responsive"src="imagens/Perfumes.jpg" alt="buzios,rio de janeiro "/>
+</figure>
+<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+		    Perfumes
+
+<p><strong>Perfumes</strong>, Como fazer meu perfume importado durar mais? Quem curte andar sempre cheiroso (a) e com um bom perfume importado durar mais é de ótima qualidade, preza por alguns fatores essenciais no que diz respeito às características da fragrância adotada. Um fator que para boa parte do público consumidor de perfumes é extremamente relevante, diz respeito. […]
+
+</p>
+
+<p>Perfume para o casamento e lua de mel: como escolher? Você já se perguntou sobre qual perfume para o casamento e lua de mel utilizar? É inegável o poder de sedução que o cheiro possui. Engana-se quem acredita que após o casamento, como já houve a conquista e o relacionamento .</p>
+
+<p>Deep Red Eau De Parfum : verdades, mitos e curiosidades do perfume importado feminino Hugo Boss Genuinamente feminino, o perfume importado feminino Hugo Boss Deep Red Eau De Parfum combina perfeitamente com mulheres que exalam paixão pela vida, são sofisticadas e extremamente sensuais. Da grife Hugo Boss, famosa pelas roupas sofisticadas e de extremo requinte.</p>
+
+<p>Perfume importado Fantasy Eau De Parfum Britney Spears descubra seus mitos e curiosidades Badalado e cultuado, o perfume importado Fantasy que leva a assinatura de uma das maiores estrelas da música pop mundial, Britney Spears, é carregado de curiosidades e alguns mitos, que certamente nossos leitores e leitoras desconhecem. Sucesso entre os profundos conhecedores de.</p>
+<blockquote class="blockquote-reverse">Fonte: smperfumes.com.br</blockquote>
+
+		 
+</div>
+</div>
+</div>
+</section>
+<section id="maquiagem">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="page-header">
+<h2>maquiagem</h2>
+</div>
+<figure class="col-12 col-sm-5 col-md-5 col-lg-5">
+<img class="img-responsive"src="imagens/maquiagem.jpg" alt="fortaleza,ceará "/>
+</figure>
+<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+		    maquiagem
+
+<p><strong>maquiagem</strong> Nada como um batom e um pouco de máscara de cílios para encarar o dia se sentindo poderosa! É inevitável: todas temos algumas inseguranças relativas à aparência que acabam influenciando a forma como vivemos e como nos comportamos. Para a maioria das mulheres, trabalhar a autoestima é um processo que dura anos, mas uma boa maquiagem pode fazer a diferença, em poucos instantes. A make vira a sua "pintura de guerra" para enfrentar o mundo com leveza, se sentindo mais poderosa e mais você mesma. Entenda!.<p>
+
+<p>A maquiagem tem um outro papel que é de extrema importância para quem luta diariamente com a aceitação da sociedade. Mulheres com problemas de acne cística e crônica, vitiligo, cicatrizes aparentes e outros traços que fazem parte da individualidade de cada uma, muitas vezes sentem necessidade de disfarçar essas características com maquiagem, ficando mais confiantes com a transformação que um pouco de base e corretivo podem fazer.
+
+Na adolescência, por exemplo, o papel inclusivo da maquiagem é evidente: ao disfarçar espinhas, manchas e oleosidade excessiva com make, as meninas se sentem mais seguras e menos expostas aos olhares críticos que são tão comuns e fragilizantes nesta idade.</p>
+
+<p>Depois do primeiro contato com a maquiagem, é comum começar a perceber como usar alguns produtos no rosto pode mudar a maneira como e também como se sente. Aos poucos, você deixa de se desesperar com olheiras ou com uma espinha mais evidente - não só por se sentir confiante, mas também porque tem a maquiagem como aliada. Com o tempo, você começa até a experimentar técnicas de contorno e outros efeitos que dão a ilusão de modificar ligeiramente o formato do seu rosto e quanto mais você se permite, mais você se conhece! E o mais legal de tudo é que, pouco a pouco, você começa a acreditar naquela mulher poderosa que você vê no espelho, e a ter certeza do seu valor e beleza com ou sem make.</p>
+<blockquote class="blockquote-reverse">Fonte: www.tudosobremake.com.br</blockquote>
+
+</div>	
+</div>
+</div>
+</div>
+</section>
+    
+<section id="belezamasculino">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="page-header">
+<h2>beleza masculino</h2>
+</div>
+<figure class="col-12 col-sm-5 col-md-5 col-lg-5">
+<img class="img-responsive"src="imagens/probelmas.jpg" alt="maresias,são paulo "/>
+</figure>
+<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+		   beleza masculino
+
+<p><strong>beleza masculino</strong> A ideia de que os homens são seres totalmente desinteressados por cuidados pessoais, com qualquer sabonete servindo para lavar o corpo todo, incluindo os cabelos, já caiu por terra há algum tempo. Atualmente, eles não só tratam da beleza, antes uma “exclusividade” feminina, mas investem dinheiro na própria aparência. Estão cada vez mais vaidosos.</p>
+
+<p>Recente levantamento da Euromonitor Internacional, líder mundial em pesquisas do setor de beleza em 80 países, mostrou que, nos últimos cinco anos, a fatia masculina do segmento dobrou no Brasil. O setor, em 2016, movimentou R$ 19,6 bilhões, mesmo com o país em crise. </p>
+
+<p>Na visão de Edimar Torres, cuidar da beleza não é benéfico apenas para o bem-estar masculino ou para o sucesso na paquera, mas também para a questão profissional. “O mercado de trabalho busca homens com mais estilo e mais vaidade. Uma boa aparência conta muito, o cara tem que estar bem”, observa..</p>
+<blockquote class="blockquote-reverse">Fonte: www.hojeemdia.com.br</blockquote>
+</div>
+
+		 </div>	
+</div>
+</div>
+</div>
+</section>
+    <section id="belezafeminina">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="page-header">
+<h2>beleza feminina</h2>
+</div>
+<figure class="col-12 col-sm-5 col-md-5 col-lg-5">
+<img class="img-responsive"src="imagens/probelfem.jpg" alt="beleza feminina
+ "/>
+</figure>
+<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+		    beleza feminina
+
+<p><strong>beleza feminina</strong> As feias que me perdoem, mas beleza é fundamental". Era um poeta maravilhoso, esse Vinicius de Moraes, mas deixou imortalizada uma frase que jamais sairia da boca de uma mulher. Aos feios, as mulheres dão boas vindas, desde que por trás do olho que não é azul e do corpo que não é atlético haja bom humor, inteligência e sex appeal.</p>
+
+<p>Nunca veremos Brad Pitt e George Clooney namorando feinhas, mas já vimos Julia Roberts casar com Lyle Lovatt, um músico que tinha o rosto decorados com crateras, e a estonteante Sharon Stone desfilar com baixinhos barrigudos até contrair matrimônio com um senhor que mais parece um boneco de cêra. Há quem defenda a idéia de que mulheres casam com qualquer um, desde que tenha poder ou dinheiro. Poucas. Não foi o caso de Julia Roberts nem o de Sharon Stone, ricas e poderosas por si só, e também não é o caso de muitas Lucias, Andreas, Cristinas, Danielas, Fernandas e Jussaras anônimas. Mulheres preferem ser amadas do que invejadas. </p>
+<blockquote class="blockquote-reverse">Fonte: www.pensador.com</blockquote>
+		 </div>	
+</div>
+</div>
+</div>
+</section>
+
+<section id="Mas Vendidos">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="page-header">
+<h2>Mas Vendidos</h2>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+<div class="thumbnail" style="background-color:#eee;">
+<img src="imagens/rostos/01.jpg" class="img-thumbnail" alt=""/>
+<div class="caption">
+<p style="font-style:oblique;">N°5
+PERFUME EM FRASCO 7.5 ml.</p>
+<p>R$ 855,00</p>
+</div>
+</div>
+</div>
+
+
+
+<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+<div class="thumbnail" style="background-color:#eee;">
+<img src="imagens/rostos/02.jpg" class="img-thumbnail" alt=""/>
+<div class="caption">
+<p style="font-style:oblique;">COCO MADEMOISELLE
+EAU DE PARFUM INTENSE SPRA 100 ml.</p>
+<p>R$ 895,00</p>
+</div>
+</div>
+</div>
+
+<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+<div class="thumbnail" style="background-color:#eee;">
+<img src="imagens/rostos/03.jpg" class="img-thumbnail" alt=""/>
+<div class="caption">
+<p style="font-style:oblique;">PERFUME ANGEL REFILLABLE THIERRY MUGLER FEMININO EAU DE PARFUM 40 ml.</p>
+<p>R$ 349,00</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+<div class="thumbnail" style="background-color:#eee;">
+<img src="imagens/rostos/04.jpg" class="img-thumbnail" alt=""/>
+<div class="caption">
+<p style="font-style:oblique;">Ferrari Perfume Masculino Red EDT 75ml - Incolor.</p>
+<p>R$ 179,29</p>
+</div>
+</div>
+</div>
+
+</section>
+<!-- início da galeria de imagens -->
+<section id="galeria">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="page-header">
+<h2>Galeria</h2>
+</div>
+</div>
+</div>
+<div>
+<img src="imagens/galeria/01.jpg" class="thumbnail" width="120" style="float:left;"/>
+<img src="imagens/galeria/10.jpg" class="thumbnail" width="120" style="float:left;"/>
+<img src="imagens/galeria/03.jpg" class="thumbnail" width="120" style="float:left;"/>
+<img src="imagens/galeria/04.jpeg" class="thumbnail" width="120" style="float:left;"/>
+<img src="imagens/galeria/06.jpg" class="thumbnail" width="120" style="float:left;"/>
+<img src="imagens/galeria/07.jpg" class="thumbnail" width="120" style="float:left;"/>
+<img src="imagens/galeria/08.jpg" class="thumbnail" width="120" style="float:left;"/>
+<img src="imagens/galeria/09.jpg" class="thumbnail" width="120" style="float:left;"/>
+</div>
+</div>
+</section>
+
+<div id="popup">
+<div id="center">
+<img id="lightbox" src="imagens/01.jpg"/>
+<img id="close" src="imagens/close.png" alt="close"/>
+</div>
+</div>
+<!-- fim da galeria -->
+<section id="faleconosco">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="page-header">
+<h2>Fale conosco</h2>
+</div>
+<div class="col-xs-12>
+    <form class="form-horizontal" action=""method="post">
+	<div class="form-group has-info">
+	<label for="nome" class="col-xs-2 control-label">
+	     nome completo:
+	</label>
+<div class="col-xs-10">
+        <input type="text" class="form-control" id="nome"/>			
+	
+</div>
+</div>
+<p>&nbsp;</p>
+<div class="form-group has-sucess">
+<label for="email" class="col-xs-2 control-label">
+E-mail:</label>
+<div class="col-xs-10">
+<input type="text" class="form-control" id="email" required/>
+</div>
+</div>
+<p>&nbsp;</p>
+<div class="form-group">
+<label for="assunto" class="col-xs-2 control-label">
+Assunto:</label>
+<div class="col-xs-10">
+<select class="form-control" id="assunto">
+<option></option>
+<option>Perfumes</option>
+<option>maquiagem</option>
+<option>beleza masculino</option>
+<option>beleza feminina</option>
+</select>
+</div>
+</div>
+<p>&nbsp;</p>
+<div class="form-group">
+<label for="tipo" class="col-xs-2 control-label">
+Já é nosso cliente?</label>
+<div class="col-xs-10">
+<label class="checkbox-inline">
+<input type="checkbox" id="id1" value="Sim">Sim
+</label>
+<label class="checkbox-inline">
+<input type="checkbox" id="id2" value="Não">Não
+</label>
+</div>
+</div>
+<p>&nbsp;</p>
+<div class="form-group">
+<label for="mensagem" class="col-xs-2 control-label">
+Mensagem:</label>
+<div class="col-xs-10">
+<textarea class="form-control" rows="8" style="resize:none;"></textarea>
+</div>
+</div>
+<p>&nbsp;</p>
+<div class="form-group">
+<div class="col-xs-offset-2 col-xs-2">
+<button type="submit" class="btn btn-success">
+Enviar Formulário
+</button>
+</div>
+<div class="col-xs-2">
+<button type="reset" class="btn btn-success">
+Limpar</button>
+</div>
+</div>
+</form>
+</div> 
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<strong>Escritório central:</strong> Avenida Presidente Vargas, 817
+Centro - Rio de Janeiro/RJ<br/>
+Tel.: 012000-653655<br/>
+E-mail: Cosmeticos@Oline.com.br
+</div>
+</div>
+</footer>
+<!-- final do fale conosco -->
+
+
+
+<!--Fim da área de conteúdo do site -->
+
+	
+	<!-- script JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<!-- inserindo JavaScript do Bootstrap -->
+	<!-- Última versão JavaScript compilada e minificada -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	
+</body>
+</html>

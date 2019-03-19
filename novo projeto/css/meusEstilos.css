@@ -1,0 +1,40 @@
+.alinhaIcones{
+	text-align: center;
+}
+.linhaCompra{
+	padding: 10px;
+	text-align: center;
+}
+
+.camposCompra{
+	height: 65px;
+
+}
+.botaoCompra{
+	
+	height: 65px;
+}
+.botaoCompraLegenda{
+	
+	float:left;
+	text-align: left;
+	margin-left: 10px;
+}
+.link{
+	color: orange !important;
+}
+
+
+section{
+	
+	padding-top: 49px;
+	padding-bottom: 15px;
+	min-height: 100vh; /* Determina o uso de toda área vertical disponível do dispositivo */
+}
+footer{
+bottom: 0;
+width: 100%;
+height: 65px;
+background-color: #333;
+color: #fff;
+}
